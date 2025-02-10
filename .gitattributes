@@ -2,3 +2,4 @@
 *.js linguist-vendored
 *.go linguist-vendored
 *.html linguist-vendored
+*.c# linguist-vendored =false
