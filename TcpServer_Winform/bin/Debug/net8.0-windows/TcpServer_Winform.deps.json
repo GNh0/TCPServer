@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "TcpServer_Winform/1.0.0": {
+        "dependencies": {
+          "TCPServer": "1.0.0"
+        },
+        "runtime": {
+          "TcpServer_Winform.dll": {}
+        }
+      },
+      "TCPServer/1.0.0": {
+        "runtime": {
+          "TCPServer.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "TcpServer_Winform/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "TCPServer/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
