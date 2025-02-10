@@ -20,6 +20,8 @@ namespace TCP.Server
         IEnumerable<TcpClient> GetConnectedClients();
         bool BroadcastData(string data);
         bool SendDataToClient(string ip, string data);
+        bool BroadcastData(byte[] data);
+        bool SendDataToClient(string ip, byte[] data);
         bool IsPortAvailable(int _nPort);
 
         event Action<byte[], string> DataReceived;

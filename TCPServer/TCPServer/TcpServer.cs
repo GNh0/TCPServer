@@ -411,8 +411,19 @@ namespace TCP.Server
         // 모든 클라이언트에게 데이터 전송
         public bool BroadcastData(string data)
         {
+            return BroadcastData(Encoding.UTF8.GetBytes(data));
+        }
+
+        // 특정 IP의 클라이언트에게만 데이터 전송
+        public bool SendDataToClient(string ip, string data)
+        {
+            return SendDataToClient(ip, Encoding.UTF8.GetBytes(data));
+        }
+
+
+        public bool BroadcastData(byte[] data)
+        {
             List<Exception> exceptions = new List<Exception>();
-            byte[] dataBytes = Encoding.UTF8.GetBytes(data);
             bool result = false;
             foreach (var client in _clients.Values)
             {
@@ -421,7 +432,7 @@ namespace TCP.Server
                 {
                     try
                     {
-                        stream.Write(dataBytes, 0, dataBytes.Length);
+                        stream.Write(data, 0, data.Length);
                         result = true;
                     }
                     catch (Exception e)
@@ -439,9 +450,9 @@ namespace TCP.Server
         }
 
         // 특정 IP의 클라이언트에게만 데이터 전송
-        public bool SendDataToClient(string ip, string data)
+        public bool SendDataToClient(string ip, byte[] data)
         {
-            byte[] dataBytes = Encoding.UTF8.GetBytes(data);
+          
             if (_clients.TryGetValue(ip, out TcpClient client) == true)
             {
                 NetworkStream stream = client.GetStream();
@@ -449,7 +460,7 @@ namespace TCP.Server
                 {
                     try
                     {
-                        stream.Write(dataBytes, 0, dataBytes.Length);
+                        stream.Write(data, 0, data.Length);
                         return true;
                     }
                     catch (Exception ex)
@@ -464,6 +475,8 @@ namespace TCP.Server
             }
             return false;
         }
+
+
 
         /// <summary>
         /// 사용 가능한 포트인지 확인
