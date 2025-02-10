@@ -3,15 +3,13 @@ using System.Net.Sockets;
 
 namespace TCP.Server
 {
-    public interface ITcpServer
+    public interface ITcpServer : IDisposable
     {
         object Port { get; set; }
         List<byte[]> CustomEndOfMessageBytes
         {
             get; set;
         }
-
-
 
         Task StartAsync();
         void Stop();
@@ -20,6 +18,10 @@ namespace TCP.Server
         IEnumerable<TcpClient> GetConnectedClients();
         bool BroadcastData(string data);
         bool SendDataToClient(string ip, string data);
+
+        bool BroadcastData(byte[] data);
+        bool SendDataToClient(string ip, byte[] data);
+
         bool IsPortAvailable(int _nPort);
 
         event Action<byte[], string> DataReceived;
