@@ -73,7 +73,7 @@ namespace TCP.Server
        
 
         //public event DataReceivedEventHandler _DataReceiveded;
-        public delegate void DataReceivedEventHandler(byte[] data, string clientIp = null);
+        //public delegate void DataReceivedEventHandler(byte[] data, string clientIp = null);
 
         public event Action<byte[], string> DataReceived;
 
@@ -420,7 +420,7 @@ namespace TCP.Server
             return SendDataToClient(ip, Encoding.UTF8.GetBytes(data));
         }
 
-
+        // 모든 클라이언트에게 데이터 전송
         public bool BroadcastData(byte[] data)
         {
             List<Exception> exceptions = new List<Exception>();
@@ -452,7 +452,6 @@ namespace TCP.Server
         // 특정 IP의 클라이언트에게만 데이터 전송
         public bool SendDataToClient(string ip, byte[] data)
         {
-          
             if (_clients.TryGetValue(ip, out TcpClient client) == true)
             {
                 NetworkStream stream = client.GetStream();
@@ -559,6 +558,25 @@ namespace TCP.Server
 
             return true;
         }
+
+
+        public void Dispose()
+        {
+            Dispose(true);
+            GC.SuppressFinalize(this);
+        }
+
+        protected virtual void Dispose(bool disposing)
+        {
+            if (disposing)
+            {
+                // 관리되는 리소스 해제
+                Stop();
+                // _listener, _clients 등의 리소스 해제
+            }
+            // 비관리 리소스 해제 (필요한 경우)
+        }
+
     }
 
     public static class TaskExtensions
