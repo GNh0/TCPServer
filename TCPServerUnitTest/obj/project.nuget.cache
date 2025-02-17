@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "gVarI3UxScTwHzmEY+Xph41gjsZCwWKyk0onQwEtKQohiFY7a6OIDBgBvDpG8St7tvOhWIBfpfnDyot7AFJhEA==",
+  "dgSpecHash": "+vsXwYBYOrBHAQGkEmudl171qePtcWHOEj2eN/3um/sPsfxIalwFJgWdXY32uzJw2/MGnTExAC5u07YSPBPXpA==",
   "success": true,
-  "projectFilePath": "D:\\Coding\\.Git\\Project\\TCPServer\\TCPServer\\TCPServerUnitTest\\TCPServerUnitTest.csproj",
+  "projectFilePath": "D:\\Coding\\.Git\\Project\\TCPServer\\TCPServerUnitTest\\TCPServerUnitTest.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\User\\.nuget\\packages\\coverlet.collector\\6.0.0\\coverlet.collector.6.0.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\6.0.0\\microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",

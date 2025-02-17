@@ -10,3 +10,13 @@ D:\Coding\.Git\Project\TCPServer\TCPServer\TCPServer\obj\Debug\net8.0\TCPServer.
 D:\Coding\.Git\Project\TCPServer\TCPServer\TCPServer\obj\Debug\net8.0\refint\TCPServer.dll
 D:\Coding\.Git\Project\TCPServer\TCPServer\TCPServer\obj\Debug\net8.0\TCPServer.pdb
 D:\Coding\.Git\Project\TCPServer\TCPServer\TCPServer\obj\Debug\net8.0\ref\TCPServer.dll
+D:\Coding\.Git\Project\TCPServer\TCPServer\obj\Debug\net8.0\TcpServer_Winform.Form1.resources
+D:\Coding\.Git\Project\TCPServer\TCPServer\obj\Debug\net8.0\TCPServer.csproj.GenerateResource.cache
+D:\Coding\.Git\Project\TCPServer\TCPServer\obj\Debug\net8.0\TCPServer.GeneratedMSBuildEditorConfig.editorconfig
+D:\Coding\.Git\Project\TCPServer\TCPServer\obj\Debug\net8.0\TCPServer.AssemblyInfoInputs.cache
+D:\Coding\.Git\Project\TCPServer\TCPServer\obj\Debug\net8.0\TCPServer.AssemblyInfo.cs
+D:\Coding\.Git\Project\TCPServer\TCPServer\obj\Debug\net8.0\TCPServer.csproj.CoreCompileInputs.cache
+D:\Coding\.Git\Project\TCPServer\TCPServer\obj\Debug\net8.0\TCPServer.sourcelink.json
+D:\Coding\.Git\Project\TCPServer\TCPServer\obj\Debug\net8.0\TCPServer.dll
+D:\Coding\.Git\Project\TCPServer\TCPServer\obj\Debug\net8.0\refint\TCPServer.dll
+D:\Coding\.Git\Project\TCPServer\TCPServer\obj\Debug\net8.0\TCPServer.pdb

@@ -1,7 +1,7 @@
 ﻿using System.Diagnostics;
 using System.Net.Sockets;
 
-namespace TCP.Server
+namespace TCP.Servers
 {
     public interface ITcpServer : IDisposable
     {

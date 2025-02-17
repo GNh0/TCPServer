@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TcpServer_Winform")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c2b060983174cdb18f7d6d524362f611ab0f2e28")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
 [assembly: System.Reflection.AssemblyProductAttribute("TcpServer_Winform")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TcpServer_Winform")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

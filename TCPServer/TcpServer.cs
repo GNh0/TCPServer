@@ -8,7 +8,7 @@ using System.Net.Sockets;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TCP.Server
+namespace TCP.Servers
 {
     public class TcpServer : ITcpServer
     {
